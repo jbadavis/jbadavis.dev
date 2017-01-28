@@ -115,6 +115,7 @@ p {
 
 .jd-header .jg-header-profile {
     border-radius: 50%;
+	display: none;
     right: 10px;
     position: absolute;
     top: 110px;
@@ -168,6 +169,10 @@ p {
     .jd-header h3 {
         margin: -8px 0 5px;
     }
+
+	.jd-header .jg-header-profile {
+		display: block;
+	}
 
     .jd-content {
         width: 50%;
