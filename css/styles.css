@@ -42,48 +42,133 @@ table {
 	border-spacing: 0;
 }
 
+body {
+}
+
 h1, h2, h3 {
     font-family: 'Cabin', sans-serif;
 }
 
 h1 {
-    font-size: 60px;
-    font-weight: 600;
+    font-size: 54px;
 }
 
 h2 {
-    font-size: 42px;
+    font-size: 36px;
 }
 
 h3 {
-    font-size: 38px;
+    font-size: 36px;
 }
 
 p {
+    line-height: 20px;
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .jd-content {
-    width: 100%;
+    animation: fadeIn 1.6s;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    width: 50%;
+}
+
+.jd-content a {
+    color: black;
+    text-decoration: none;
+    transition: color .4s;
+}
+
+.jd-content a:hover {
+    color: #4d4d4d;
 }
 
 .jd-header {
-    border-bottom: 2px solid black;
-    margin: 0 auto 60px;
-    width: 50%;
+    animation: fadeUp 1s;
+    padding-top: 100px;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.jd-header:after {
+    animation: fadeWidth 1.4s;
+    bottom: -10px;
+    border-bottom: 1px solid black;
+    content: "";
+    padding-top: 10px;
+    position: absolute;
+    width: 100%;
 }
 
 .jd-header h1 {
-    margin: 80px 0 20px;
+    margin-bottom: 20px;
+}
+
+.jd-header h2 {
+    color: #4d4d4d;
 }
 
 .jd-header h3 {
-    margin-top: -8px;
+    color: #4d4d4d;
+    margin: -8px 0 5px;
 }
 
-.jd-intro {
-    margin: 0 auto;
-    width: 50%;
+.jd-header .jg-header-profile {
+    border-radius: 50%;
+    right: 10px;
+    position: absolute;
+    top: 110px;
+    width: 120px;
+}
+
+.jd-footer {
+    bottom: 40px;
+    position: absolute;
+}
+
+.jd-footer a {
+    animation: fadeIn 2s;
+    color: black;
+    font-family: 'Cabin Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color .4s;
+}
+
+.jd-footer a:hover {
+    color: #4d4d4d;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes fadeWidth {
+    0% {
+        width: 0;
+    }
+    40% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
 }
