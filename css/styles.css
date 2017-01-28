@@ -61,7 +61,8 @@ h3 {
 
 p {
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
 .jd-content {
@@ -69,9 +70,20 @@ p {
 }
 
 .jd-header {
-    text-align: left;
+    border-bottom: 2px solid black;
+    margin: 0 auto 60px;
+    width: 50%;
 }
 
 .jd-header h1 {
-    margin-bottom: 20px;
+    margin: 80px 0 20px;
+}
+
+.jd-header h3 {
+    margin-top: -8px;
+}
+
+.jd-intro {
+    margin: 0 auto;
+    width: 50%;
 }
