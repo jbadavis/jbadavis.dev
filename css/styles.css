@@ -62,7 +62,7 @@ p {
     line-height: 20px;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .jd-content {
@@ -122,7 +122,7 @@ p {
 }
 
 .jd-footer {
-    bottom: 20px;
+    bottom: 50px;
     position: absolute;
 }
 
@@ -157,6 +157,7 @@ p {
 
     p {
         font-size: 18px;
+        margin-bottom: 20px;
     }
 
     .jd-header {
