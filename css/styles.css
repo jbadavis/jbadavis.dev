@@ -42,29 +42,26 @@ table {
 	border-spacing: 0;
 }
 
-body {
-}
-
 h1, h2, h3 {
     font-family: 'Cabin', sans-serif;
 }
 
 h1 {
-    font-size: 54px;
+    font-size: 38px;
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 24px;
 }
 
 h3 {
-    font-size: 36px;
+    font-size: 24px;
 }
 
 p {
     line-height: 20px;
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 20px;
 }
 
@@ -73,7 +70,7 @@ p {
     height: 100vh;
     margin: 0 auto;
     position: relative;
-    width: 50%;
+    width: 70%;
 }
 
 .jd-content a {
@@ -88,9 +85,9 @@ p {
 
 .jd-header {
     animation: fadeUp 1s;
-    padding-top: 100px;
+    padding-top: 60px;
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .jd-header:after {
@@ -113,7 +110,7 @@ p {
 
 .jd-header h3 {
     color: #4d4d4d;
-    margin: -8px 0 5px;
+    margin: -4px 0 5px;
 }
 
 .jd-header .jg-header-profile {
@@ -133,9 +130,9 @@ p {
     animation: fadeIn 2s;
     color: black;
     font-family: 'Cabin Condensed', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
-    margin-right: 14px;
+    margin-right: 6px;
     text-decoration: none;
     text-transform: uppercase;
     transition: color .4s;
@@ -143,6 +140,42 @@ p {
 
 .jd-footer a:hover {
     color: #4d4d4d;
+}
+
+@media screen and (min-width: 480px) {
+    h1 {
+        font-size: 54px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 36px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .jd-header {
+        padding-top: 100px;
+        margin-bottom: 60px;
+    }
+
+    .jd-header h3 {
+        margin: -8px 0 5px;
+    }
+
+    .jd-content {
+        width: 50%;
+    }
+
+    .jd-footer a {
+        font-size: 16px;
+        margin-right: 14px;
+    }
 }
 
 @keyframes fadeIn {
