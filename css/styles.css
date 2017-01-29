@@ -55,10 +55,17 @@ h2 {
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 p {
+    line-height: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+a {
     line-height: 20px;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
@@ -118,6 +125,18 @@ p {
 	display: none;
 }
 
+.jd-work-title {
+	margin-bottom: 15px;
+}
+
+.jd-work a {
+	text-decoration: underline;
+}
+
+.jd-work li {
+	margin-bottom: 5px;
+}
+
 .jd-footer {
     bottom: 90px;
     position: absolute;
@@ -126,7 +145,7 @@ p {
 .jd-footer a {
     animation: fadeIn 2s;
     color: black;
-    font-family: 'Cabin Condensed', sans-serif;
+	font-family: 'Cabin Condensed', sans-serif;
     font-size: 14px;
     font-weight: 600;
     margin-right: 6px;
@@ -160,13 +179,20 @@ p {
     }
 
     h3 {
-        font-size: 36px;
+        font-size: 26px;
     }
 
     p {
         font-size: 18px;
+		line-height: 24px;
         margin-bottom: 20px;
     }
+
+	a {
+		font-size: 18px;
+		line-height: 24px;
+		margin-bottom: 20px;
+	}
 
     .jd-header {
         padding-top: 100px;
@@ -189,6 +215,14 @@ p {
     .jd-content {
         width: 50%;
     }
+
+	.jd-work-title {
+		margin-bottom: 20px;
+	}
+
+	.jd-work li {
+		margin-bottom: 10px;
+	}
 
     .jd-footer {
         bottom: 40px;
