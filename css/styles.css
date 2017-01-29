@@ -86,9 +86,9 @@ p {
 
 .jd-header {
     animation: fadeUp 1s;
+	margin-bottom: 30px;
 	padding-top: 40px;
     position: relative;
-    margin-bottom: 30px;
 }
 
 .jd-header:after {
@@ -115,12 +115,7 @@ p {
 }
 
 .jd-header .jg-header-profile {
-    border-radius: 50%;
 	display: none;
-    right: 10px;
-    position: absolute;
-    top: 115px;
-    width: 120px;
 }
 
 .jd-footer {
@@ -142,6 +137,17 @@ p {
 
 .jd-footer a:hover {
     color: #4d4d4d;
+}
+
+@media screen and (min-width: 321px) {
+	.jd-header .jg-header-profile {
+		border-radius: 50%;
+		display: block;
+		position: absolute;
+		right: 10px;
+		top: 45px;
+		width: 90px;
+	}
 }
 
 @media screen and (min-width: 480px) {
@@ -175,10 +181,6 @@ p {
         margin: -8px 0 5px;
     }
 
-	.jd-header .jg-header-profile {
-		display: block;
-	}
-
     .jd-content {
         width: 50%;
     }
@@ -191,6 +193,29 @@ p {
         font-size: 16px;
         margin-right: 14px;
     }
+}
+
+@media screen
+		and (max-width: 800px)
+		and (orientation: landscape) {
+	.jd-header {
+		padding-top: 80px;
+		margin-bottom: 60px;
+	}
+
+	.jd-content {
+        width: 80%;
+    }
+
+	.jd-header .jg-header-profile {
+	    top: 90px;
+		width: 120px;
+	}
+
+	.jd-footer {
+		margin: 40px 0 40px;
+		position: static;
+	}
 }
 
 @keyframes fadeIn {
