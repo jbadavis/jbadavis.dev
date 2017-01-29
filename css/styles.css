@@ -138,7 +138,7 @@ a {
 }
 
 .jd-footer {
-    bottom: 90px;
+    bottom: 10px;
     position: absolute;
 }
 
@@ -166,6 +166,10 @@ a {
 		right: 10px;
 		top: 45px;
 		width: 90px;
+	}
+
+	.jd-footer {
+	    bottom: 90px;
 	}
 }
 
