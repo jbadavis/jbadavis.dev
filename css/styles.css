@@ -69,7 +69,6 @@ a {
     line-height: 20px;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-    margin-bottom: 15px;
 }
 
 .jd-content {
@@ -101,7 +100,7 @@ a {
 .jd-header:after {
     animation: fadeWidth 1.4s;
     bottom: -15px;
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid black;
     content: "";
     padding-top: 10px;
     position: absolute;
@@ -129,12 +128,16 @@ a {
 	margin-bottom: 15px;
 }
 
+.jd-work-list {
+	list-style-type: disc;
+}
+
 .jd-work a {
 	text-decoration: underline;
 }
 
 .jd-work li {
-	margin-bottom: 5px;
+	margin: 0 0 5px 15px;
 }
 
 .jd-footer {
@@ -175,27 +178,26 @@ a {
 
 @media screen and (min-width: 480px) {
     h1 {
-        font-size: 54px;
+        font-size: 52px;
     }
 
     h2 {
-        font-size: 36px;
+        font-size: 28px;
     }
 
     h3 {
-        font-size: 26px;
+        font-size: 22px;
     }
 
     p {
-        font-size: 18px;
-		line-height: 24px;
+        font-size: 16px;
+		line-height: 22px;
         margin-bottom: 20px;
     }
 
 	a {
-		font-size: 18px;
-		line-height: 24px;
-		margin-bottom: 20px;
+		font-size: 16px;
+		line-height: 22px;
 	}
 
     .jd-header {
@@ -207,16 +209,17 @@ a {
 	    bottom: -30px;
 	}
 
-    .jd-header h3 {
-        margin: -8px 0 5px;
-    }
+	.jd-header h1 {
+		margin: 0 0 15px;
+	}
 
 	.jd-header .jg-header-profile {
-		top: 110px;
-		width: 125px;
+		top: 105px;
+		width: 90px;
 	}
 
     .jd-content {
+		max-width: 492px;
         width: 50%;
     }
 
