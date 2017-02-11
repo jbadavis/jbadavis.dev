@@ -69,7 +69,6 @@ a {
     line-height: 20px;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-    margin-bottom: 15px;
 }
 
 .jd-content {
@@ -129,12 +128,16 @@ a {
 	margin-bottom: 15px;
 }
 
+.jd-work-list {
+	list-style-type: disc;
+}
+
 .jd-work a {
 	text-decoration: underline;
 }
 
 .jd-work li {
-	margin-bottom: 5px;
+	margin: 0 0 5px 15px;
 }
 
 .jd-footer {
@@ -195,7 +198,6 @@ a {
 	a {
 		font-size: 16px;
 		line-height: 22px;
-		margin-bottom: 5px;
 	}
 
     .jd-header {
@@ -217,6 +219,7 @@ a {
 	}
 
     .jd-content {
+		max-width: 492px;
         width: 50%;
     }
 
