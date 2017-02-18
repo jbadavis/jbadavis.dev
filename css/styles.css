@@ -168,7 +168,7 @@ a {
 		position: absolute;
 		right: 10px;
 		top: 45px;
-		width: 90px;
+		width: 70px;
 	}
 
 	.jd-footer {
@@ -220,6 +220,7 @@ a {
 
     .jd-content {
 		max-width: 492px;
+		min-width: 390px;
         width: 50%;
     }
 
@@ -241,8 +242,8 @@ a {
     }
 }
 
-@media screen
-		and (max-width: 800px)
+/*@media screen
+		and (max-width: 480px)
 		and (orientation: landscape) {
 	.jd-header {
 		padding-top: 80px;
@@ -262,7 +263,7 @@ a {
 		margin: 40px 0 40px;
 		position: static;
 	}
-}
+}*/
 
 @keyframes fadeIn {
     0% {opacity: 0;}
