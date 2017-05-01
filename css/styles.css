@@ -71,7 +71,7 @@ a {
 .jd-content {
 	left: 50%;
 	margin: 0 auto;
-	max-width: 300px;
+	max-width: 260px;
 	position: fixed;
 	transform: translate(-50%, 0);
 	width: 80%;
