@@ -40,12 +40,9 @@ a {
 }
 
 .jd-header {
-	margin: 40px 0 30px;
+	margin: 45px 0 60px;
+	position: relative;
 	text-align: center;
-}
-
-.jd-header h1 {
-	margin-bottom: 10px;
 }
 
 .jd-header .jg-header-profile {
@@ -54,6 +51,22 @@ a {
 	margin: 0 auto 30px;
 	width: 80px;
 }
+
+.jd-header h1 {
+	margin-bottom: 10px;
+}
+
+.jd-header h2::after {
+	border-bottom: .5px solid #000;
+	bottom: -30px;
+	content: "";
+	left: 50%;
+	position: absolute;
+	transform: translateX(-50%)
+						 rotate(-60deg);
+	width: 25px;
+}
+
 
 .jd-content {
 	left: 50%;
