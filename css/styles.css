@@ -1,3 +1,5 @@
+/* Libs */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -42,86 +44,99 @@ table {
 	border-spacing: 0;
 }
 
+/* Styles */
+
+body {
+	background: #EFD1C6;
+}
+
 h1, h2, h3 {
-    font-family: 'Cabin', sans-serif;
+  font-family: 'Cabin', sans-serif;
 }
 
 h1 {
-    font-size: 38px;
+  font-size: 32px;
+	letter-spacing: 1px;
 }
 
 h2 {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 h3 {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 p {
-    line-height: 20px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    margin-bottom: 15px;
+  line-height: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  margin-bottom: 15px;
 }
 
 a {
-    line-height: 20px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+  line-height: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
 }
 
 .jd-content {
-    animation: fadeIn 1.6s;
-    height: 100vh;
-    margin: 0 auto;
+  animation: fadeIn 1.6s;
+  height: 100vh;
+  margin: 0 auto;
 	max-width: 600px;
-    position: relative;
-    width: 80%;
+  position: relative;
+  width: 80%;
 }
 
 .jd-content a {
-    color: black;
-    text-decoration: none;
-    transition: color .4s;
+  color: black;
+  text-decoration: none;
+  transition: color .4s;
 }
 
 .jd-content a:hover {
-    color: #4d4d4d;
+  color: #4d4d4d;
 }
 
 .jd-header {
-    animation: fadeUp 1s;
+  animation: fadeUp 1s;
 	margin-bottom: 30px;
 	padding-top: 40px;
-    position: relative;
+  position: relative;
+	text-align: center;
 }
 
-.jd-header:after {
-    animation: fadeWidth 1.4s;
-    bottom: -15px;
-    border-bottom: 1px solid black;
-    content: "";
-    padding-top: 10px;
-    position: absolute;
-    width: 100%;
+/*.jd-header:after {
+  animation: fadeWidth 1.4s;
+  bottom: -20px;
+  border-bottom: 1px solid black;
+  content: "";
+	left: 50%;
+  padding-top: 10px;
+  position: absolute;
+	transform: translateY(-50%);
+  width: 100%;
+}*/
+
+.jd-header .jg-header-profile {
+	border-radius: 50%;
+	display: block;
+	margin: 0 auto 30px;
+	width: 85px;
 }
 
 .jd-header h1 {
-    margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .jd-header h2 {
-    color: #4d4d4d;
+  /*color: #4d4d4d;*/
 }
 
 .jd-header h3 {
-    color: #4d4d4d;
-    margin: -4px 0 5px;
-}
-
-.jd-header .jg-header-profile {
-	display: none;
+  color: #4d4d4d;
+  margin: -4px 0 5px;
 }
 
 .jd-work-title {
@@ -146,64 +161,57 @@ a {
 }
 
 .jd-footer a {
-    animation: fadeIn 2s;
-    color: black;
+	animation: fadeIn 2s;
+	color: black;
 	font-family: 'Cabin Condensed', sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    margin-right: 6px;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: color .4s;
+	font-size: 14px;
+	font-weight: 600;
+	margin-right: 6px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: color .4s;
 }
 
 .jd-footer a:hover {
-    color: #4d4d4d;
+  color: #4d4d4d;
 }
 
 @media screen and (min-width: 321px) {
-	.jd-header .jg-header-profile {
-		border-radius: 50%;
-		display: block;
-		position: absolute;
-		right: 10px;
-		top: 45px;
-		width: 90px;
-	}
+
 
 	.jd-footer {
-	    bottom: 90px;
+    bottom: 90px;
 	}
 }
 
 @media screen and (min-width: 480px) {
-    h1 {
-        font-size: 52px;
-    }
+	h1 {
+	  font-size: 52px;
+	}
 
-    h2 {
-        font-size: 28px;
-    }
+	h2 {
+	  font-size: 28px;
+	}
 
-    h3 {
-        font-size: 22px;
-    }
+	h3 {
+	  font-size: 22px;
+	}
 
-    p {
-        font-size: 16px;
+	p {
+	  font-size: 16px;
 		line-height: 22px;
-        margin-bottom: 20px;
-    }
+	  margin-bottom: 20px;
+	}
 
 	a {
 		font-size: 16px;
 		line-height: 22px;
 	}
 
-    .jd-header {
-        padding-top: 100px;
-        margin-bottom: 60px;
-    }
+  .jd-header {
+      padding-top: 100px;
+      margin-bottom: 60px;
+  }
 
 	.jd-header:after {
 	    bottom: -30px;
@@ -218,10 +226,10 @@ a {
 		width: 90px;
 	}
 
-    .jd-content {
+  .jd-content {
 		max-width: 492px;
-        width: 50%;
-    }
+    width: 50%;
+  }
 
 	.jd-work-title {
 		margin-bottom: 20px;
@@ -231,14 +239,14 @@ a {
 		margin-bottom: 10px;
 	}
 
-    .jd-footer {
-        bottom: 40px;
-    }
+  .jd-footer {
+    bottom: 40px;
+  }
 
-    .jd-footer a {
-        font-size: 16px;
-        margin-right: 14px;
-    }
+  .jd-footer a {
+    font-size: 16px;
+    margin-right: 14px;
+  }
 }
 
 @media screen
@@ -250,11 +258,11 @@ a {
 	}
 
 	.jd-content {
-        width: 80%;
-    }
+	    width: 80%;
+  }
 
 	.jd-header .jg-header-profile {
-	    top: 90px;
+    top: 90px;
 		width: 120px;
 	}
 
@@ -265,29 +273,29 @@ a {
 }
 
 @keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
 @keyframes fadeUp {
-    0% {
-        opacity: 0;
-        transform: translateY(10%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0%);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
 
-@keyframes fadeWidth {
-    0% {
-        width: 0;
-    }
-    40% {
-        width: 0;
-    }
-    100% {
-        width: 100%;
-    }
-}
+/*@keyframes fadeWidth {
+  0% {
+    width: 0;
+  }
+  40% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}*/
