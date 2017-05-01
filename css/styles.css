@@ -57,6 +57,7 @@ a {
 }
 
 .jd-header h2::after {
+	animation: drawIn .6s;
 	border-bottom: .5px solid #000;
 	bottom: -30px;
 	content: "";
@@ -66,7 +67,6 @@ a {
 						 rotate(-60deg);
 	width: 25px;
 }
-
 
 .jd-content {
 	left: 50%;
@@ -83,4 +83,10 @@ a {
 		top: 50%;
 		transform: translate(-50%, -50%);
 	}
+}
+
+@keyframes drawIn {
+	0% {width: 0;}
+	20% {width: 0;}
+	100% {width: 25px;}
 }
