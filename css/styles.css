@@ -74,6 +74,7 @@ a {
 	max-width: 260px;
 	position: fixed;
 	transform: translate(-50%, 0);
+  text-align: center;
 	width: 80%;
 }
 
