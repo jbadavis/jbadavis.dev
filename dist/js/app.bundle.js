@@ -78,7 +78,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 var staggerFrom = {
   opacity: 0,
-  y: 5,
+  y: 25,
   ease: 'easeInOut'
 };
 
@@ -99,7 +99,7 @@ var App = function () {
   _createClass(App, [{
     key: 'setScene',
     value: function setScene() {
-      new _gsap.TimelineLite().staggerFromTo(this.staggerElms, .4, staggerFrom, staggerTo, .1);
+      new _gsap.TimelineLite().staggerFromTo(this.staggerElms, .8, staggerFrom, staggerTo, .1);
     }
   }, {
     key: 'setInternals',

@@ -2,7 +2,7 @@ import { TimelineLite } from 'gsap';
 
 const staggerFrom = {
   opacity: 0,
-  y: 5,
+  y: 25,
   ease: 'easeInOut'
 };
 
@@ -20,7 +20,7 @@ class App {
 
   setScene() {
     new TimelineLite()
-      .staggerFromTo(this.staggerElms, .4, staggerFrom, staggerTo, .1)
+      .staggerFromTo(this.staggerElms, .8, staggerFrom, staggerTo, .1)
   }
 
   setInternals() {
