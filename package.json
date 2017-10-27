@@ -1,0 +1,46 @@
+{
+  "name": "jbadavis.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbadavis/jbadavis.github.io.git"
+  },
+  "author": "jbadavis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jbadavis/jbadavis.github.io/issues"
+  },
+  "homepage": "https://github.com/jbadavis/jbadavis.github.io#readme",
+  "dependencies": {
+    "autoprefixer": "6.3.6",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "browser-sync": "^2.18.13",
+    "cssnano": "3.7.1",
+    "eslint": "^4.8.0",
+    "gsap": "^1.20.3",
+    "gulp": "3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-notify": "^3.0.0",
+    "gulp-postcss": "6.1.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-watch": "4.3.8",
+    "gulp-webpack": "^1.5.0",
+    "gutil": "^1.6.4",
+    "jquery": "^3.2.1",
+    "pubsub-js": "^1.5.7",
+    "scrollmagic": "^2.0.5",
+    "slick-carousel": "^1.8.1",
+    "uglifyjs-webpack-plugin": "^1.0.0-beta.3",
+    "webpack": "^3.6.0",
+    "webpack-merge": "^4.1.0"
+  }
+}

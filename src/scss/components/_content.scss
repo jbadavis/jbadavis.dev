@@ -1,0 +1,13 @@
+.jd-content {
+	left: 50%;
+	margin: 0 auto;
+	position: fixed;
+	transform: translate(-50%, 0);
+	text-align: center;
+
+  @media screen and (min-width: 737px) {
+		height: 75%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+  }
+}
