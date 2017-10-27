@@ -1,0 +1,15 @@
+@import "libs/reset-styles";
+@import "partials/typography";
+
+@import "components/header";
+@import "components/content";
+@import "components/links";
+@import "components/introduction";
+
+$millenial-pink: #EFD1C6;
+
+body {
+	background: $millenial-pink;
+	font-family: 'Lato', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}

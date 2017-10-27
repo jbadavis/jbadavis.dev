@@ -1,0 +1,30 @@
+h1, h2, h3 {
+	font-family: 'PT Serif Caption', sans-serif;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+p {
+  line-height: 20px;
+  letter-spacing: .1px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+a {
+	color: black;
+	font-size: 14px;
+	text-decoration: none;
+	position: relative;
+
+	&::after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		border-top: 1px solid #000;
+		bottom: -2.2px;
+		left: 0;
+	}
+}
