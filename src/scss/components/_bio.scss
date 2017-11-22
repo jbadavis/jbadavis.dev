@@ -3,14 +3,49 @@
   width: 250px;
 
   .jd-b-intro {
-    margin-bottom: 30px;
   }
 
   .jd-b-work {
+    margin-bottom: 45px;
+    position: relative;
 
+  	a::after {
+  		border-top: 1px solid #000;
+  		bottom: -2.2px;
+  		content: "";
+  		left: 0;
+  		position: absolute;
+  		width: 100%;
+  	}
   }
 
   .jd-b-links {
   }
 
+  .jd-b-link {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    &__icon {
+      display: block;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .jd-b-github {
+    background-image: url('/dist/images/github.png');
+  }
+
+  .jd-b-linkedin {
+    background-image: url('/dist/images/linkedin.png');
+  }
 }
