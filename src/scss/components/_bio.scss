@@ -2,9 +2,6 @@
   margin: 0 auto;
   width: 250px;
 
-  .jd-b-intro {
-  }
-
   .jd-b-work {
     margin-bottom: 45px;
     position: relative;
@@ -19,9 +16,6 @@
   	}
   }
 
-  .jd-b-links {
-  }
-
   .jd-b-link {
     display: inline-block;
     height: 20px;
@@ -32,10 +26,10 @@
     }
 
     &__icon {
-      display: block;
+      background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: center;
+      display: block;
       height: 100%;
       width: 100%;
     }
