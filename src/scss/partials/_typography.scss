@@ -6,6 +6,10 @@ h1 {
 	font-size: 26px;
 }
 
+h2 {
+	font-size: 18px;
+}
+
 p {
   line-height: 20px;
   letter-spacing: .1px;
@@ -18,13 +22,11 @@ a {
 	font-size: 14px;
 	text-decoration: none;
 	position: relative;
+}
 
-	&::after {
-		content: "";
-		position: absolute;
-		width: 100%;
-		border-top: 1px solid #000;
-		bottom: -2.2px;
-		left: 0;
-	}
+ul {
+
+  li {
+    margin-bottom: 15px;
+  }
 }

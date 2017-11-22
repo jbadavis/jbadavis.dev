@@ -78,13 +78,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 var staggerFrom = {
   opacity: 0,
-  y: 25,
-  ease: 'easeInOut'
+  y: 45,
+  ease: 'easeInOut',
+  scale: .95
 };
 
 var staggerTo = {
   opacity: 1,
-  y: 0
+  y: 0,
+  scale: 1
 };
 
 var App = function () {
@@ -99,7 +101,7 @@ var App = function () {
   _createClass(App, [{
     key: 'setScene',
     value: function setScene() {
-      new _gsap.TimelineLite().staggerFromTo(this.staggerElms, .8, staggerFrom, staggerTo, .1);
+      _gsap.TweenMax.staggerFromTo(this.staggerElms, 1, staggerFrom, staggerTo, .1);
     }
   }, {
     key: 'setInternals',

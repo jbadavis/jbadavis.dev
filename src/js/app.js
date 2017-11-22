@@ -1,14 +1,16 @@
-import { TimelineLite } from 'gsap';
+import { TweenMax } from 'gsap';
 
 const staggerFrom = {
   opacity: 0,
-  y: 25,
-  ease: 'easeInOut'
+  y: 45,
+  ease: 'easeInOut',
+  scale: .95
 };
 
 const staggerTo = {
   opacity: 1,
   y: 0,
+  scale: 1
 };
 
 class App {
@@ -19,8 +21,7 @@ class App {
   }
 
   setScene() {
-    new TimelineLite()
-      .staggerFromTo(this.staggerElms, .8, staggerFrom, staggerTo, .1)
+    TweenMax.staggerFromTo(this.staggerElms, 1, staggerFrom, staggerTo, .1)
   }
 
   setInternals() {
