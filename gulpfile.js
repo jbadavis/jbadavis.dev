@@ -6,6 +6,7 @@ var sass = require('gulp-sass');
 var postcss = require('gulp-postcss');
 var gulpWebpack = require('gulp-webpack');
 var watch = require('gulp-watch');
+var clean = require('gulp-clean');
 
 var webpack = require('webpack');
 var autoprefixer = require('autoprefixer');
@@ -20,9 +21,14 @@ var swallowError = function(e) {
   this.emit('end');
 };
 
+gulp.task('clean', function() {
+  return gulp.src('dist')
+    .pipe(clean());
+});
+
 gulp.task('copy', function() {
-  return gulp.src('./src/images/')
-    .pipe(gulp.dest('./dist/'));
+  return gulp.src('./src/images/*')
+    .pipe(gulp.dest('./dist/images'));
 });
 
 gulp.task('sass', function () {
@@ -49,7 +55,7 @@ gulp.task('js-watch', ['webpack:prod'], function (done) {
   done();
 });
 
-gulp.task('default', ['copy', 'sass', 'webpack:prod']);
+gulp.task('default', ['sass', 'webpack:prod', 'copy']);
 
 gulp.task('dev', ['default'], function() {
   browserSync.init({ server: { baseDir: "./" } });
