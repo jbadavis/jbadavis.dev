@@ -21,7 +21,7 @@ class App {
   }
 
   setScene() {
-    TweenMax.staggerFromTo(this.staggerElms, 1, staggerFrom, staggerTo, .1)
+    TweenMax.staggerFromTo(this.staggerElms, 1, staggerFrom, staggerTo, .1);
   }
 
   setInternals() {
