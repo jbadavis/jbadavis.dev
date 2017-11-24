@@ -84,15 +84,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 var staggerFrom = {
   opacity: 0,
-  y: 45,
-  ease: 'easeInOut',
-  scale: .95
+  x: 40
 };
 
 var staggerTo = {
   opacity: 1,
-  y: 0,
-  scale: 1
+  x: 0,
+  ease: 'easeInOut'
 };
 
 var App = function () {
@@ -110,7 +108,7 @@ var App = function () {
   }, {
     key: 'setScene',
     value: function setScene() {
-      new _gsap.TimelineLite().to(this.pageOverlay, .7, { 'opacity': 0, 'ease': Power2.easeOut }).set(this.pageOverlay, { 'z-index': -1 }).staggerFromTo(this.staggerElms, 1, staggerFrom, staggerTo, .1);
+      new _gsap.TimelineLite().to(this.pageOverlay, 1, { 'opacity': 0, 'ease': Power2.easeIn }).set(this.pageOverlay, { 'z-index': -1 }).staggerFromTo(this.staggerElms, 1, staggerFrom, staggerTo, .08);
     }
   }, {
     key: 'setInternals',
