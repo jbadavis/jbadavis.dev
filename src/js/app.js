@@ -16,6 +16,7 @@ const staggerTo = {
 
 class App {
   constructor() {
+    
     this.init();
   }
 
@@ -31,7 +32,7 @@ class App {
   }
 
   setInternals() {
-    this.pageOverlay = document.querySelectorAll('.jd-page-overlay')
+    this.pageOverlay = document.querySelectorAll('.jd-page-overlay');
     this.staggerElms = document.querySelectorAll('.stagger-up');
   }
 

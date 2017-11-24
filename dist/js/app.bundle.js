@@ -8158,7 +8158,11 @@ var Tracking = function () {
     this.trackClick = function (e) {
       var eventLabel = e.currentTarget.getAttribute('data-tracking-label');
 
-      ga('send', 'event', 'link', 'click', eventLabel);
+      ga('send', 'event', {
+        eventCategory: 'Outbound Link',
+        eventAction: 'click',
+        eventLabel: eventLabel
+      });
     };
 
     this.setInternals();
