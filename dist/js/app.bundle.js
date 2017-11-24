@@ -99,11 +99,7 @@ var App = function () {
   function App() {
     _classCallCheck(this, App);
 
-    this.setInternals();
-
-    this.setScene();
-
-    this.initTracking();
+    this.init();
   }
 
   _createClass(App, [{
@@ -114,12 +110,22 @@ var App = function () {
   }, {
     key: 'setScene',
     value: function setScene() {
-      _gsap.TweenMax.staggerFromTo(this.staggerElms, 1, staggerFrom, staggerTo, .1);
+      new _gsap.TimelineLite().to(this.pageOverlay, .7, { 'opacity': 0, 'ease': Power2.easeOut }).set(this.pageOverlay, { 'z-index': -1 }).staggerFromTo(this.staggerElms, 1, staggerFrom, staggerTo, .1);
     }
   }, {
     key: 'setInternals',
     value: function setInternals() {
+      this.pageOverlay = document.querySelectorAll('.jd-page-overlay');
       this.staggerElms = document.querySelectorAll('.stagger-up');
+    }
+  }, {
+    key: 'init',
+    value: function init() {
+      this.setInternals();
+
+      this.setScene();
+
+      this.initTracking();
     }
   }]);
 
@@ -8152,12 +8158,7 @@ var Tracking = function () {
     this.trackClick = function (e) {
       var eventLabel = e.currentTarget.getAttribute('data-tracking-label');
 
-      ga('send', {
-        hitType: 'event',
-        eventCategory: 'link',
-        eventAction: 'click',
-        eventLabel: eventLabel
-      });
+      ga('send', 'event', 'link', 'click', eventLabel);
     };
 
     this.setInternals();

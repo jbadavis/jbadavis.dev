@@ -10,12 +10,7 @@ export default class Tracking {
   trackClick = (e) => {
     const eventLabel = e.currentTarget.getAttribute('data-tracking-label');
 
-    ga('send', {
-      hitType: 'event',
-      eventCategory: 'link',
-      eventAction: 'click',
-      eventLabel: eventLabel
-    });
+    ga('send', 'event', 'link', 'click', eventLabel);
   }
 
   setInternals() {
