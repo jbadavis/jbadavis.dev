@@ -17,7 +17,7 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-    
+
       gtag('config', 'UA-110069156-1');
     </script>
 
@@ -39,13 +39,22 @@
           <p class="stagger-up">I've worked on sites including:</p>
           <ul>
             <li class="stagger-up">
-              <a href="https://www.fosterandpartners.com/" target="_blank">Foster + Partners</a>
+              <a class="ga-track-click"
+                data-tracking-label="Foster + Partners"
+                href="https://www.fosterandpartners.com/"
+                target="_blank">Foster + Partners</a>
             </li>
             <li class="stagger-up">
-              <a href="https://www.audiusa.com/" target="_blank">Audi USA</a>
+              <a class="ga-track-click"
+                data-tracking-label="Audi USA"
+                href="https://www.audiusa.com/"
+                target="_blank">Audi USA</a>
             </li>
             <li class="stagger-up">
-              <a href="https://defining-moments.zegna.com/" target="_blank">Defining Moments</a>
+              <a class="ga-track-click"
+                data-tracking-label="Defining Moments"
+                href="https://defining-moments.zegna.com/"
+                target="_blank">Defining Moments</a>
             </li>
           </ul>
         </div>
@@ -59,6 +68,8 @@
         </div>
       </main>
     </div>
+
+    <div class="jd-page-overlay"></div>
 
     <script type="text/javascript" src="dist/js/app.bundle.js"></script>
 
