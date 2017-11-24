@@ -1,4 +1,5 @@
-import { TweenMax } from 'gsap';
+import { TimelineLite } from 'gsap';
+import Tracking from './utils/tracking';
 
 const staggerFrom = {
   opacity: 0,
@@ -15,17 +16,31 @@ const staggerTo = {
 
 class App {
   constructor() {
-    this.setInternals();
+    this.init();
+  }
 
-    this.setScene();
+  initTracking() {
+    new Tracking();
   }
 
   setScene() {
-    TweenMax.staggerFromTo(this.staggerElms, 1, staggerFrom, staggerTo, .1);
+    new TimelineLite()
+      .to(this.pageOverlay, .7, { 'opacity': 0, 'ease':  Power2.easeOut })
+      .set(this.pageOverlay, { 'z-index': -1 })
+      .staggerFromTo(this.staggerElms, 1, staggerFrom, staggerTo, .1);
   }
 
   setInternals() {
+    this.pageOverlay = document.querySelectorAll('.jd-page-overlay')
     this.staggerElms = document.querySelectorAll('.stagger-up');
+  }
+
+  init() {
+    this.setInternals();
+
+    this.setScene();
+
+    this.initTracking();
   }
 }
 
