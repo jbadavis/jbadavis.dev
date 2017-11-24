@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prod": "NODE_ENV=production gulp"
   },
   "repository": {
     "type": "git",
@@ -39,7 +39,7 @@
     "pubsub-js": "^1.5.7",
     "scrollmagic": "^2.0.5",
     "slick-carousel": "^1.8.1",
-    "uglifyjs-webpack-plugin": "^1.0.0-beta.3",
+    "uglifyjs-webpack-plugin": "^1.1.1",
     "webpack": "^3.6.0",
     "webpack-merge": "^4.1.0"
   },
