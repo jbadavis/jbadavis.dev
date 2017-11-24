@@ -1,4 +1,5 @@
 import { TweenMax } from 'gsap';
+import Tracking from './utils/tracking';
 
 const staggerFrom = {
   opacity: 0,
@@ -18,6 +19,12 @@ class App {
     this.setInternals();
 
     this.setScene();
+
+    this.initTracking();
+  }
+
+  initTracking() {
+    new Tracking();
   }
 
   setScene() {
