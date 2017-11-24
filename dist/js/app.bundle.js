@@ -8154,7 +8154,7 @@ var Tracking = function () {
 
       ga('send', {
         hitType: 'event',
-        eventCategory: 'Work Link',
+        eventCategory: 'link',
         eventAction: 'click',
         eventLabel: eventLabel
       });

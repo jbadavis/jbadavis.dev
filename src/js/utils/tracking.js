@@ -12,7 +12,7 @@ export default class Tracking {
 
     ga('send', {
       hitType: 'event',
-      eventCategory: 'Work Link',
+      eventCategory: 'link',
       eventAction: 'click',
       eventLabel: eventLabel
     });
