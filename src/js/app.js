@@ -26,11 +26,13 @@ class App {
     new TimelineLite()
       .to(this.pageOverlay, 1, { 'opacity': 0, 'ease':  Power2.easeIn })
       .set(this.pageOverlay, { 'z-index': -1 })
+      .to(this.headerImage, .7, { 'opacity': 1 })
       .staggerFromTo(this.staggerElms, 1, staggerFrom, staggerTo, .08);
   }
 
   setInternals() {
     this.pageOverlay = document.querySelectorAll('.jd-page-overlay');
+    this.headerImage = document.querySelectorAll('.jd-h-image');
     this.staggerElms = document.querySelectorAll('.stagger-up');
   }
 
