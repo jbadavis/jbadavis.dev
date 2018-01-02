@@ -9,9 +9,10 @@
 @import "components/page-overlay";
 
 $millenial-pink: #EFD1C6;
+$background-colour: #FFF;
 
 body {
-	background: $millenial-pink;
+	background: $background-colour;
 	font-family: 'Lato', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
