@@ -44,7 +44,7 @@ gulp.task('sass', function () {
     .pipe(browserSync.stream());
 });
 
-gulp.task('webpack:prod', function () {
+gulp.task('webpack', function () {
   return gulp.src('./src/js/app.js')
     .pipe(gulpWebpack(require('./webpack.config.js'), webpack))
     .pipe(gulp.dest('./dist/js'));
@@ -55,7 +55,7 @@ gulp.task('js-watch', ['webpack:prod'], function (done) {
   done();
 });
 
-gulp.task('default', ['sass', 'webpack:prod', 'copy']);
+gulp.task('default', ['sass', 'webpack', 'copy']);
 
 gulp.task('dev', ['default'], function() {
   browserSync.init({ server: { baseDir: "./" } });
@@ -65,3 +65,4 @@ gulp.task('dev', ['default'], function() {
 
   gulp.watch("**/*.html").on('change', browserSync.reload);
 });
+
