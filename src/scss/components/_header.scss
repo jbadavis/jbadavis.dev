@@ -1,26 +1,26 @@
 .jd-header {
-	margin: 45px 0 45px;
-	position: relative;
+  margin: 45px 0 45px;
+  position: relative;
 
   .jd-h-image {
-		border-radius: 50%;
-		display: block;
-		margin: 0 auto 25px;
-		opacity: 0;
-		width: 70px;
-	}
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 25px;
+    opacity: 0;
+    width: 70px;
+  }
 
   h1 {
-  	margin-bottom: 10px;
+    margin-bottom: 10px;
 
-		&::after {
-	  	border-bottom: 1px solid #000;
-	  	bottom: -25px;
-	  	content: "";
-	  	left: 50%;
-	  	position: absolute;
-	  	transform: translateX(-50%);
-	  	width: 25px;
-		}
+    &::after {
+      border-bottom: 1px solid #000;
+      bottom: -25px;
+      content: "";
+      left: 50%;
+      position: absolute;
+      transform: translateX(-50%);
+      width: 25px;
+    }
   }
 }

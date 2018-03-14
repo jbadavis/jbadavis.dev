@@ -1,32 +1,31 @@
-h1, h2, h3 {
-	font-family: 'PT Serif Caption', sans-serif;
+h1,
+h2,
+h3 {
+  font-family: "PT Serif Caption", sans-serif;
 }
 
 h1 {
-	font-size: 26px;
+  font-size: 26px;
 }
 
 h2 {
-	font-size: 18px;
+  font-size: 18px;
 }
 
 p {
   line-height: 20px;
-  letter-spacing: .1px;
+  letter-spacing: 0.1px;
   font-size: 14px;
   margin-bottom: 15px;
 }
 
 a {
-	color: black;
-	font-size: 14px;
-	text-decoration: none;
-	position: relative;
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  position: relative;
 }
 
-ul {
-
-  li {
-    margin-bottom: 15px;
-  }
+ul li {
+  margin-bottom: 15px;
 }
