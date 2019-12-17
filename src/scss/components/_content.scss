@@ -5,6 +5,8 @@
   position: absolute;
   transform: translate(-50%, -50%);
   text-align: center;
+  width: 65%;
+  max-width: 295px;
 
   @media screen and (min-width: 737px) {
     height: 75%;

@@ -5,6 +5,8 @@
     "sourceType": "module"
   },
   "env": {
-    "browser": true
+    "browser": true,
+    "amd": true,
+    "node": true
   }
 }
