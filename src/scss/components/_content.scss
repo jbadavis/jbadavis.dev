@@ -1,8 +1,9 @@
 .jd-content {
   left: 50%;
+  top: 50%;
   margin: 0 auto;
   position: absolute;
-  transform: translate(-50%, 0);
+  transform: translate(-50%, -50%);
   text-align: center;
 
   @media screen and (min-width: 737px) {
