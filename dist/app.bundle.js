@@ -130,7 +130,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _gsap = __webpack_require__(/*! gsap */ \"../../node_modules/gsap/index.js\");\n\nfunction animate() {\n  var pageOverlay = document.querySelectorAll(\".jd-page-overlay\");\n  var headerImage = document.querySelectorAll(\".jd-h-image\");\n  var staggerElms = document.querySelectorAll(\".stagger-up\");\n\n  new _gsap.TimelineLite().to(pageOverlay, 0.7, { opacity: 0, ease: \"power2.easeIn\" }).set(pageOverlay, { \"z-index\": -1 }).to(headerImage, 0.7, { opacity: 1 }).staggerFromTo(staggerElms, 1, { opacity: 0, y: 40 }, { opacity: 1, y: 0, ease: \"easeInOut\" }, 0.1);\n}\n\n(function main() {\n  animate();\n})();\n\n//# sourceURL=webpack:///./app.js?");
+eval("\n\nvar _gsap = __webpack_require__(/*! gsap */ \"../../node_modules/gsap/index.js\");\n\nfunction animate() {\n  var pageOverlay = document.querySelectorAll(\".jd-page-overlay\");\n  var headerImage = document.querySelectorAll(\".jd-h-image\");\n  var staggerElms = document.querySelectorAll(\".stagger-up\");\n\n  new _gsap.TimelineLite().to(pageOverlay, 0.7, { opacity: 0, ease: \"power2.easeIn\" }).set(pageOverlay, { \"z-index\": -1 }).to(headerImage, 0.7, { opacity: 1 }).staggerFromTo(staggerElms, 2.0, { opacity: 0 }, { opacity: 1, ease: \"easeInOut\" }, 0.08);\n}\n\n(function main() {\n  animate();\n})();\n\n//# sourceURL=webpack:///./app.js?");
 
 /***/ })
 

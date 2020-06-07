@@ -11,10 +11,10 @@ function animate() {
     .to(headerImage, 0.7, { opacity: 1 })
     .staggerFromTo(
       staggerElms,
-      1,
-      { opacity: 0, y: 40 },
-      { opacity: 1, y: 0, ease: "easeInOut" },
-      0.1
+      2.0,
+      { opacity: 0 },
+      { opacity: 1, ease: "easeInOut" },
+      0.08
     );
 }
 
