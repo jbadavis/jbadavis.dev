@@ -1,1 +1,1 @@
-# [jbadavis.github.io](https://jbadavis.github.io/)
+# [jbadavis.dev](https://jbadavis.dev)
