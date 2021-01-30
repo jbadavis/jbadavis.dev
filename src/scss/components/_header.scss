@@ -13,13 +13,13 @@
   h1 {
 
     &::after {
-      border-bottom: 1px solid #000;
+      border-bottom: 2px solid #000;
       bottom: -25px;
       content: "";
       left: 50%;
       position: absolute;
       transform: translateX(-50%);
-      width: 25px;
+      width: 50px;
     }
   }
 }
