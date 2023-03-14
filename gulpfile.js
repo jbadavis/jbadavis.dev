@@ -1,12 +1,13 @@
-const gulp = require("gulp");
-const browsersync = require("browser-sync").create();
-const webpack = require("webpack-stream");
-const del = require("del");
-const sass = require("gulp-sass")(require('sass'));
-const cleanCss = require("gulp-clean-css");
+import gulp from "gulp";
+import browsersync from "browser-sync";
+import webpack from "webpack-stream";
+import { deleteAsync } from "del";
+import sass from "sass";
+import gulpSass from "gulp-sass";
+import cleanCss from "gulp-clean-css";
 
 function clean() {
-  return del(["./dist"]);
+  return deleteAsync(["./dist"]);
 }
 
 function copy() {
@@ -14,11 +15,11 @@ function copy() {
 }
 
 function browserSync(done) {
-  browsersync.init({
+  browsersync.create().init({
     server: {
-      baseDir: "./"
+      baseDir: "./",
     },
-    port: 3000
+    port: 3000,
   });
 
   done();
@@ -33,7 +34,11 @@ function browserSyncReload(done) {
 function javascript() {
   return gulp
     .src("src/js/app.js")
-    .pipe(webpack(require("./webpack.config.js")))
+    .pipe(
+      webpack({
+        mode: process.env.NODE_ENV || "development",
+      })
+    )
     .pipe(gulp.dest("dist/"))
     .pipe(browsersync.stream());
 }
@@ -41,23 +46,23 @@ function javascript() {
 function css() {
   return gulp
     .src("./src/scss/**/*.scss")
-    .pipe(sass({ includePaths: ["node_modules"] }))
+    .pipe(gulpSass(sass)({ includePaths: ["node_modules"] }))
     .pipe(cleanCss({ compatibility: "ie8" }))
     .pipe(gulp.dest("./dist/"))
     .pipe(browsersync.stream());
 }
 
-function watch() {
+function watchFiles() {
   gulp.watch("./index.html", gulp.series(browserSyncReload));
   gulp.watch("./src/img/**/*", gulp.series(copy));
   gulp.watch("./src/scss/**/*", gulp.series(css));
   gulp.watch("./src/js/**/*", gulp.series(javascript));
 }
 
-exports.watch = gulp.series(
+export const watch = gulp.series(
   clean,
   gulp.parallel(copy, css, javascript),
-  gulp.parallel(watch, browserSync)
+  gulp.parallel(watchFiles, browserSync)
 );
 
-exports.default = gulp.series(clean, gulp.parallel(copy, css, javascript));
+export default gulp.series(clean, gulp.parallel(copy, css, javascript));

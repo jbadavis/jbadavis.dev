@@ -1,14 +1,16 @@
-import { TimelineLite } from "gsap";
+import gsap from "gsap";
 
 function animate() {
   const pageOverlay = document.querySelectorAll(".jd-page-overlay");
   const headerImage = document.querySelectorAll(".jd-h-image");
   const staggerElms = document.querySelectorAll(".stagger-up");
 
-  new TimelineLite()
-    .to(pageOverlay, 0.7, { opacity: 0, ease: "power2.easeIn" })
+  const timeline = gsap.timeline();
+
+  timeline
+    .to(pageOverlay, { duration: 0.7, opacity: 0, ease: "power2.easeIn" })
     .set(pageOverlay, { "z-index": -1 })
-    .to(headerImage, 0.7, { opacity: 1 })
+    .to(headerImage, { duration: 0.7, opacity: 1 })
     .staggerFromTo(
       staggerElms,
       2.0,
