@@ -1,12 +1,6 @@
-import {
-	Heading,
-	Divider,
-	Text,
-	Link,
-	ListItem,
-	UnorderedList,
-	VStack,
-} from '@chakra-ui/react';
+import {Heading, Divider, Text, Link, VStack} from '@chakra-ui/react';
+import SocialLinks from './components/social-links';
+import ExperienceLinks from './components/experience-links';
 
 function App() {
 	return (
@@ -30,34 +24,9 @@ function App() {
 				</Link>
 				.
 			</Text>
-			<Text>
-				I've previously worked for{' '}
-				<Link href="https://planes.studio" isExternal>
-					Red Badger
-				</Link>
-				,{' '}
-				<Link href="https://planes.studio" isExternal>
-					AKQA
-				</Link>{' '}
-				and on sites including:
-			</Text>
-			<UnorderedList spacing="0.6em">
-				<ListItem>
-					<Link href="https://dis-loyalty.com/" isExternal>
-						Dis-Loyalty.
-					</Link>
-				</ListItem>
-				<ListItem>
-					<Link href="https://www.nandos.co.uk/order/search" isExternal>
-						Nando's Delievery.
-					</Link>
-				</ListItem>
-				<ListItem>
-					<Link href="https://www.fosterandpartners.com/" isExternal>
-						Foster + Partners.
-					</Link>
-				</ListItem>
-			</UnorderedList>
+			<ExperienceLinks />
+			<Divider borderColor="black" w="50%" />
+			<SocialLinks />
 		</VStack>
 	);
 }
