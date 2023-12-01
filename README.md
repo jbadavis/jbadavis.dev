@@ -1,9 +1,17 @@
-# React + TypeScript + Vite
+# Welcome 👋
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal website. It's built using some technologies I really like:
 
-Currently, two official plugins are available:
+- [Vite](https://vitejs.dev/).
+- [Bun](https://bun.sh/).
+- [Chakra UI](https://chakra-ui.com/).
+- [XO](https://github.com/xojs/xo).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting Started
 
+Make sure you have [Bun installed](https://bun.sh/docs/installation) and then run:
+
+```
+bun install
+bun dev
+```
