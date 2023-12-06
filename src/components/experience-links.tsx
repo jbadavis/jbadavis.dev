@@ -21,7 +21,7 @@ const ExperienceLinks = () => (
 			</ListItem>
 			<ListItem>
 				<Link href="https://www.nandos.co.uk/order/search" isExternal>
-					Nando's Delievery.
+					Nando's Delivery.
 				</Link>
 			</ListItem>
 			<ListItem>
