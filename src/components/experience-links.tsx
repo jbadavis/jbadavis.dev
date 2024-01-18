@@ -1,4 +1,4 @@
-import {Text, Link, ListItem, UnorderedList} from '@chakra-ui/react';
+import { Link, ListItem, Text, UnorderedList } from '@chakra-ui/react';
 
 const ExperienceLinks = () => (
 	<>
