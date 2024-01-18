@@ -1,6 +1,6 @@
-import {Box, Heading, Text, Link} from '@chakra-ui/react';
-import meUrl from '../assets/me.png';
-import Divider from './divider';
+import { Box, Heading, Link, Text } from "@chakra-ui/react";
+import meUrl from "../assets/me.png";
+import Divider from "./divider";
 
 const Bio = () => (
 	<>
@@ -19,14 +19,14 @@ const Bio = () => (
 		</Heading>
 		<Divider />
 		<Text>
-			I'm a London-based{' '}
+			I'm a London-based{" "}
 			<Link
 				href="https://docs.publishing.service.gov.uk/manual/tech-lead-responsibilities.html"
 				isExternal
 			>
 				tech lead
-			</Link>{' '}
-			working at{' '}
+			</Link>{" "}
+			working at{" "}
 			<Link href="https://planes.studio" isExternal>
 				Planes ✈️
 			</Link>

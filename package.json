@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "lint": "xo",
+    "lint": "biome check *",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -20,17 +20,11 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.5.2",
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
     "@vitejs/plugin-react": "^4.2.0",
     "typescript": "^5.2.2",
-    "vite": "^5.0.0",
-    "xo": "^0.56.0"
-  },
-  "xo": {
-    "prettier": true,
-    "rules": {
-      "import/extensions": 0
-    }
+    "vite": "^5.0.0"
   }
 }

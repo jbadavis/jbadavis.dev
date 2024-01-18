@@ -1,16 +1,16 @@
-import {Text, Link, ListItem, UnorderedList} from '@chakra-ui/react';
+import { Link, ListItem, Text, UnorderedList } from "@chakra-ui/react";
 
 const ExperienceLinks = () => (
 	<>
 		<Text>
-			I've previously worked for{' '}
+			I've previously worked for{" "}
 			<Link href="https://red-badger.com" isExternal>
 				Red Badger
 			</Link>
-			,{' '}
+			,{" "}
 			<Link href="https://www.akqa.com/" isExternal>
 				AKQA
-			</Link>{' '}
+			</Link>{" "}
 			and on sites including:
 		</Text>
 		<UnorderedList spacing="0.6em">

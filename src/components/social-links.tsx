@@ -1,7 +1,7 @@
-import {ListItem, UnorderedList, Image, Link} from '@chakra-ui/react';
-import githubLogoUrl from '../assets/github.png';
-import linkedinLogoUrl from '../assets/linkedin.png';
-import emailLogoUrl from '../assets/email.png';
+import { Image, Link, ListItem, UnorderedList } from "@chakra-ui/react";
+import emailLogoUrl from "../assets/email.png";
+import githubLogoUrl from "../assets/github.png";
+import linkedinLogoUrl from "../assets/linkedin.png";
 
 const SocialLinks = () => (
 	<UnorderedList spacing="0.6em" listStyleType="none" marginInlineStart="0">
