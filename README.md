@@ -5,7 +5,7 @@ This is my personal website. It's built using some technologies I really like:
 - [Vite](https://vitejs.dev/).
 - [Bun](https://bun.sh/).
 - [Chakra UI](https://chakra-ui.com/).
-- [XO](https://github.com/xojs/xo).
+- [Biome](https://biomejs.dev/).
 
 You can visit the site here:
 
