@@ -3,7 +3,7 @@ import { Link, ListItem, Text, UnorderedList } from '@chakra-ui/react';
 const ExperienceLinks = () => (
 	<>
 		<Text>
-			I've previously worked for{' '}
+			I've worked for{' '}
 			<Link href="https://red-badger.com" isExternal>
 				Red Badger
 			</Link>
