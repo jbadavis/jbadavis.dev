@@ -17,21 +17,19 @@ const Bio = () => (
 		<Heading as="h1" letterSpacing="wide" textTransform="uppercase">
 			Jack Davis
 		</Heading>
-		<Divider />
+		<Divider />{' '}
 		<Text>
+			{' '}
 			I'm a London-based{' '}
 			<Link
 				href="https://docs.publishing.service.gov.uk/manual/tech-lead-responsibilities.html"
 				isExternal
 			>
 				tech lead
-			</Link>{' '}
-			working at{' '}
-			<Link href="https://planes.studio" isExternal>
-				Planes ✈️
 			</Link>
 			.
 		</Text>
 	</>
 );
+
 export default Bio;
