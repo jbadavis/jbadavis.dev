@@ -1,6 +1,5 @@
 import { Box, Heading, Link, Text } from '@chakra-ui/react';
 import meUrl from '../assets/me.png';
-import Divider from './divider';
 
 const Bio = () => (
 	<>
@@ -14,10 +13,9 @@ const Bio = () => (
 			bgImage={meUrl}
 			bgSize="cover"
 		/>
-		<Heading as="h1" letterSpacing="wide" textTransform="uppercase">
+		<Heading as="h1" letterSpacing="wide">
 			Jack Davis
 		</Heading>
-		<Divider />{' '}
 		<Text>
 			{' '}
 			I'm a London-based{' '}
