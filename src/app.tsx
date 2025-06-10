@@ -26,7 +26,7 @@ function App() {
 					h="100vh"
 					w="80%"
 					m="0 auto"
-					maxW="600px"
+					maxW="340px"
 				>
 					<Bio />
 					<ExperienceLinks />
